@@ -12,10 +12,6 @@ const userAuth = require("./routes/auth");
 app.use("/posts", postRoute);
 app.use("/auth", userAuth);
 
-app.get("/", (req, res) => {
-  res.send("Hani pie not right now");
-});
-
 mongoose.connect(
   process.env.DB_CONNECTION,
   { useNewUrlParser: true },
